@@ -1,0 +1,40 @@
+html{
+    height:100%;
+    }
+    title{
+    display:none;
+    }
+    
+    body{
+        background-color: rgb(77, 153, 200);
+    }
+    
+    .p1{
+    padding-left:450px;
+    font-size:50px;
+    border:2px solid black;
+    border-radius:5px;
+    font-weight:bold;
+    background-color: rgb(22, 73, 125);
+    color: greenyellow;
+    }
+    .p2{
+    padding-left:350px;
+    padding-top:10px;
+    font-size:40px;
+    
+    }
+    
+    table{
+    height:50%;
+    width:100%;
+    border-collapse:collapse;
+    border-spacing:5px;
+    
+    }
+
+
+    .d1{
+    font-weight:bold;
+    color:greenyellow;
+    }
