@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <title>Sushmita Simmala</title>
+        <style>
+            .container{
+                display: grid;
+                grid-template-columns: 1fr 10fr 1fr 1fr;
+                column-gap: 5px;
+
+            }
+            img{
+                border-radius: 50%;
+            }
+            .p1{
+                font-size: 80px;
+                color: brown;
+                font-weight: bolder;
+                padding-top:50px;
+            }
+        </style>
+        
+    </head>
+    
+    <body>
+        <div class="container">
+            <div>
+            <img src="C:\Users\simma\Downloads\Sushmitasimmala-batch-32\sushmitasimmala-batch-32\05-31-2023\mypic.jpg" width="250" height="250">
+            </div>
+            <div>
+                <p class="p1">My Profile</p>
+            </div>
+        </div>
+        <div id="profile_content">
+            <p>
+                <span id="my_profile"></span>
+            </p>
+
+        
+
+        <script>
+            const my_profile = {
+                            firstname:'Sushmita', 
+                            lastname:'Simmala',
+                            email_id:'sushmithakundali.s.1403@gmail.com',
+                            phone:'+1(940)218-8292',
+                            driving_License:'481765213', 
+                            DOB:'08/17/1997',
+                            city:'denton',
+                            state:'Texas',
+                            postal_code:'76201',
+                            Country:'United States'
+                            
+                            }
+            const hobby={
+                hobbies:[{sport:['badminton']}, {art:['Designing Clothes']}, {talent:['Singing']}
+            ]};
+            
+            const profileSpan = document.getElementById("my_profile");
+            let profileContent = "";
+
+            for (const key in my_profile) {
+                profileContent += key + ": " + my_profile[key] + "<br>";
+            }
+
+            profileSpan.innerHTML = profileContent;
+            const hob= hobby.hobbies[hobby.hobbies.length-1].talent[0];
+            const talent=hob.talent;
+            console.log("Talent:"+hob);
+        </script>
+        </div>
+        
+    </body>
+</html>
