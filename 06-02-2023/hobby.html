@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+    <title>
+
+    </title>
+</head>
+<body>
+    <div name="hob"></div>
+    <script>
+        function hobby(hob){
+           hob.toString();
+        }
+        function pushHobby(hob1,element){
+            hob1.push(element);
+        }
+        function popHobby(hob2){
+            hob2.pop();
+        }
+        function removeHobby(hob3,i,j){
+            hob3.splice(i,j);
+        }
+        var arr=['badminton','singing','designing','driving','games'];
+        console.log("Displaying the array using functions");
+        hobby(arr);
+        console.log(arr);
+        pushHobby(arr,'running');
+        console.log("Inserting...");
+        console.log(arr);
+        popHobby(arr);
+        console.log("Deleting...");
+        console.log(arr);
+        removeHobby(arr,2,1);
+        console.log("Remove a specific element by using splice(using index range)");
+        console.log(arr);
+
+
+    </script>
+</body>
+</html>
