@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+    <title>Sushmita Simmala profile</title>
+</head>
+<body>
+    <form id="form_myprofile">
+    <p>Firstname:<input  type="text"  id="Firstname"/></p>
+    <p>Lastname:<input  type="text"  id="Lastname"/></p>
+    <p>Phone:<input  type="text"  id="Phone"/></p>
+    <p>Email-id:<input  type="text" id="Email"/></p>
+    <p>Country:<input  type="text" id="Country"/></p>
+    <p><button type="button" onclick="senddata()" >SUBMIT</button></p>
+    </form>
+
+    <script>
+      function senddata(){
+                console.log(document.getElementById("Firstname").value);
+                console.log(document.getElementById("Lastname").value);
+                console.log(document.getElementById("Phone").value);
+                console.log(document.getElementById("Email").value);
+                console.log(document.getElementById("Country").value); 
+            }
+
+    </script>
+</body>
+</html>
